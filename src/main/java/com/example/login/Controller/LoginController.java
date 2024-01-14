@@ -31,7 +31,7 @@ public class LoginController {
     @Autowired
     private JWTUtil tokenService;
 
-    @PostMapping("/login")
+    @PostMapping("/signin")
     public ResponseEntity<?> login(@RequestBody UserCreateDTO loginRequest) {
         Optional<User> userOptional = userRepository.findByEmail(loginRequest.getEmail());
     

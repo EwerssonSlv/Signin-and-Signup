@@ -8,7 +8,7 @@ async function login() {
     };
 
     try {
-        const response = await fetch("http://localhost:8082/logar", {
+        const response = await fetch("http://localhost:8082/signin", {
             mode:"cors",
             method: "POST",
             headers: {
